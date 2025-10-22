@@ -1,0 +1,151 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | Smart Tech Store</title>
+  <script src="cart.js" defer></script>
+  <style>/* CART PAGE STYLING */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.navbar a:hover, .navbar a.active {
+  color: yellow;
+}
+
+/* CART PAGE */
+.cart-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+}
+
+.cart-item img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cart-item-info {
+  flex: 1;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.cart-item h3 {
+  margin: 5px 0;
+}
+
+.cart-summary {
+  margin-top: 30px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+}
+
+.cart-buttons {
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.clear-btn {
+  background-color: red;
+  color: white;
+}
+
+.checkout-btn {
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}</style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2>🛍 Smart Tech Store</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="cart.html" class="active">Cart</a>
+    </div>
+  </nav>
+
+  <!-- CART SECTION -->
+  <section class="cart-page">
+    <h1>Your Shopping Cart</h1>
+    <div id="cart-items" class="cart-container"></div>
+
+    <div class="cart-summary">
+      <h3 id="total">Total: ₦0</h3>
+      <div class="cart-buttons">
+        <button onclick="clearCart()" class="clear-btn">🗑 Clear Cart</button>
+        <a href="index.html"><button class="checkout-btn">⬅ Continue Shopping</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Smart Tech Store. All rights reserved.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Contact Us - Smart Tech Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f9f9f9;
+        color: #333;
+      }
+      nav {
+        background-color: black;
+        text-align: center;
+        padding: 20px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+      nav a:hover {
+        color: yellow;
+      }
+      .contact-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      h2 {
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      button {
+        margin-top: 15px;
+        padding: 10px 15px;
+        background: yellow;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      button:hover {
+        background: orange;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #222;
+        color: white;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">cart🛒</a>
+    </nav>
+
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Fill the form below:</p>
+      <form action="mailto:okparajoshua021@gmail.com"method="post"enctype="text/plain">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="5" placeholder="Type your message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+
+    <footer>
+      © 2025 Smart Tech Store. All rights reserved.
+    </footer>
+  </body>
+</html>
